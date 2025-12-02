@@ -1,5 +1,5 @@
 def main() -> None:
-    with open("input-day-1.txt") as f:
+    with open("inputs/day-1.txt") as f:
         rotations = f.read().splitlines(False)
 
     part1_password = 0

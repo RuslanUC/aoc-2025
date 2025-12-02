@@ -48,7 +48,7 @@ def part2(ranges: list[str]) -> None:
 
 
 def main() -> None:
-    with open("input-day-2.txt") as f:
+    with open("inputs/day-2.txt") as f:
         ranges = f.read().replace("\n", "").split(",")
 
     part1(ranges)
