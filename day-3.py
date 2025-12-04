@@ -22,7 +22,6 @@ def part1(banks: list[list[int]]) -> None:
 
         joltage = bat1 * 10 + bat2
         total_output += joltage
-        # print(joltage)
 
     print(f"Part 1 total joltage: {total_output}")
 
@@ -44,7 +43,6 @@ def part2(banks: list[list[int]]) -> None:
             joltage += bat
 
         total_output += joltage
-        # print(joltage)
 
     print(f"Part 2 total joltage: {total_output}")
 
@@ -58,7 +56,7 @@ def main() -> None:
         for bank in banks
     ]
 
-    # part1(banks)
+    part1(banks)
     part2(banks)
 
 
