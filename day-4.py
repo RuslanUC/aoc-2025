@@ -1,11 +1,6 @@
 def part1(grid: list[list[int]]) -> None:
     can_be_accessed = 0
 
-    grid_vis = [
-        ["@" if col else "." for col in row]
-        for row in grid
-    ]
-
     for i in range(len(grid)):
         for j in range(len(grid[0])):
             if not grid[i][j]:
@@ -19,13 +14,9 @@ def part1(grid: list[list[int]]) -> None:
                     if adj >= 4:
                         break
             if adj < 4:
-                grid_vis[i][j] = "x"
                 can_be_accessed += 1
 
     print(f"Part 1: {can_be_accessed}")
-    # print(f"Vis:")
-    # for row in grid_vis:
-    #     print("".join(row))
 
 
 def part2(grid: list[list[int]]) -> None:

@@ -11,7 +11,7 @@ def part1(ranges: list[tuple[int, int]], ids: list[int]) -> None:
 
 
 def part2(ranges: list[tuple[int, int]]) -> None:
-    ranges.sort(key=lambda e: e[0])
+    ranges.sort(key=lambda el: el[0])
     correct_ranges = []
 
     for start, end in ranges:
@@ -26,10 +26,8 @@ def part2(ranges: list[tuple[int, int]]) -> None:
             correct_ranges.append((start, end))
 
     available = 0
-    # print("ranges:")
     for s, e in correct_ranges:
         available += e - s + 1
-        # print(f"  {s} - {e}")
 
     print(f"Part 2 available ids: {available}")
 
